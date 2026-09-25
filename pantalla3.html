@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo darte cuenta? - Pantalla 3</title>
+
+    <!-- Google Fonts: Poppins (800) y Averia Serif Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos unificada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón Home (Imagen de la casita) -->
+    <a href="index.html" class="btn-home" aria-label="Volver al inicio">
+        <img src="img/home.png" alt="Inicio" class="home-icon-img">
+    </a>
+
+    <!-- Elemento decorativo Neón (Arriba a la derecha) -->
+    <img src="img/Blandaarribaizquierda.png" alt="Decoración Neón Superior" class="blob blob-top-right">
+
+    <!-- Rectángulo Central Principal -->
+    <main class="card-container card-container-p3">
+
+        <!-- Título principal -->
+        <header class="header-title-p3">
+            <h1 class="title-text-p3">¿Como darte cuenta?</h1>
+        </header>
+
+        <!-- Lista Interactiva de Puntos con Audios -->
+        <section class="points-list">
+
+            <!-- Ítem 1: Fallas en la voz -->
+            <div class="point-item">
+                <div class="icon-wrapper">
+                    <img src="img/fallas.png" alt="Fallas en la voz" class="point-icon-img">
+                    <button type="button" class="btn-play-audio" aria-label="Escuchar ejemplo de fallas en la voz">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="point-text">
+                    <strong>Fallas en la voz:</strong> <span class="highlight">Sonido robótico y/o ausencia de respiraciones</span>
+                </p>
+                <audio id="audio-1" src="audio/audio1.mpeg" preload="none"></audio>
+            </div>
+
+            <!-- Ítem 2: Errores de audio -->
+            <div class="point-item">
+                <div class="icon-wrapper">
+                    <img src="img/errores.png" alt="Errores de audio" class="point-icon-img">
+                    <button type="button" class="btn-play-audio" aria-label="Escuchar ejemplo de errores de audio">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="point-text">
+                    <strong>Errores de audio:</strong> <span class="highlight">Ecos, acentos o pronunciaciones raras.</span>
+                </p>
+                <audio id="audio-2" src="audio/audio2.mpeg" preload="none"></audio>
+            </div>
+
+            <!-- Ítem 3: Cortes -->
+            <div class="point-item">
+                <div class="icon-wrapper">
+                    <img src="img/cortes.png" alt="Cortes en el audio" class="point-icon-img">
+                    <button type="button" class="btn-play-audio" aria-label="Escuchar ejemplo de cortes de audio">
+                        <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg class="pause-icon" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+                </div>
+                <p class="point-text">
+                    <strong>Cortes: La IA suele dejar</strong> <span class="highlight">huecos vacíos</span> <strong>o</strong> <span class="highlight">cortes muy bruscos</span> <strong>en las frecuencias altas.</strong>
+                </p>
+                <audio id="audio-3" src="audio/audio3.mpeg" preload="none"></audio>
+            </div>
+
+        </section>
+
+        <!-- Fila Inferior: Botón + Crédito -->
+        <div class="bottom-controls-container">
+            <button id="btn-finalizar" class="btn-continuar">Continuar</button>
+            <span class="source-credit">Información obtenida de: /estudiantes-argentina.unir.net/</span>
+        </div>
+
+    </main>
+
+    <!-- Archivo JS unificado -->
+    <script src="script.js"></script>
+</body>
+</html>

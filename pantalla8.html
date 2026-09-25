@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Poné a prueba lo que aprendiste</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-body">
+
+    <!-- Botón Home Grande -->
+<a href="index.html" class="btn-home-icon" aria-label="Volver al inicio">
+    <img src="img/home.png" alt="Home" class="home-icon-img">
+</a>
+
+    <!-- Blanda que va abajo a la izquierda -->
+    <img src="img/Blandadegradadamulticolor.png" alt="" class="blob-bottom-left">
+
+    <!-- Blanda que va arriba a la derecha -->
+    <img src="img/Blandaarribaizquierda.png" alt="" class="blob-top-right">
+
+    <main class="quiz-wrapper">
+        <h1 class="quiz-title">Poné a prueba lo que aprendiste:</h1>
+
+        <!-- Tarjeta Transparente con Borde en Degradado -->
+        <div class="quiz-card-transparent">
+            
+            <div class="quiz-content">
+                <div class="quiz-question-header">
+                    <div class="question-number">1</div>
+                    <h2 class="question-text">
+                        ¿Qué porcentaje de personas confundió una voz clonada por IA con una voz real?
+                    </h2>
+                </div>
+
+                <form class="quiz-options-form" id="quiz-form">
+                    <label class="quiz-option">
+                        <input type="radio" name="question1" value="42">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">42%</span>
+                    </label>
+
+                    <label class="quiz-option">
+                        <input type="radio" name="question1" value="58">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">58%</span>
+                    </label>
+
+                    <label class="quiz-option">
+                        <input type="radio" name="question1" value="74">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">74%</span>
+                    </label>
+
+                    <label class="quiz-option">
+                        <input type="radio" name="question1" value="97">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">97%</span>
+                    </label>
+                </form>
+            </div>
+
+            <!-- Cerebro Sobresaliendo a la Derecha -->
+            <img src="img/cerebro.png" alt="Cerebro IA" class="brain-img-floating">
+
+        </div>
+
+        <!-- Fila Inferior Unificada (Botón y Rayitas juntas en la misma línea) -->
+        <div class="quiz-footer-row">
+            
+            <!-- Indicador de Progreso Centrado -->
+            <div class="quiz-progress-bar">
+                <span class="progress-step active"></span>
+                <span class="progress-step"></span>
+                <span class="progress-step"></span>
+                <span class="progress-step"></span>
+                <span class="progress-step"></span>
+            </div>
+
+            <!-- Botón Confirmar a la Derecha -->
+            <button type="button" class="btn-quiz-action btn-confirm-response" id="btn-confirm">
+                Confirmar respuesta
+            </button>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

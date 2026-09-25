@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de David Guetta</title>
+
+    <!-- Google Fonts: Poppins (800) y Averia Serif Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos unificada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón Volver al Mapa -->
+    <a href="pantalla7.html" class="btn-back-arrow" aria-label="Volver al mapa">
+        <img src="img/flecha.png" alt="Volver" class="back-arrow-img">
+    </a>
+
+    <!-- Elemento decorativo Neón -->
+    <img src="img/Blandaarribaderecha.png" alt="Decoración Neón Superior" class="blob blob-top-left-sza">
+
+    <!-- Pantalla Flotante del Artista -->
+    <section class="screen-wrapper-artist">
+
+        <!-- Columna Izquierda: Foto de Perfil y Nombre -->
+        <div class="artist-profile-col">
+            <div class="artist-big-avatar-ring border-purple">
+                <img src="img/david.png" alt="David Guetta" class="artist-big-avatar-img">
+            </div>
+            <div class="artist-title-row">
+                <h1 class="artist-big-name">DAVID GUETTA</h1>
+                <img src="img/francia.png" alt="Francia" class="flag-img">
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Roles, Barra de Opinión y Citas -->
+        <div class="artist-details-col">
+
+            <!-- Rol de David Guetta (DJ) -->
+            <div class="roles-image-container">
+                <div class="role-item">
+                    <div class="role-icon-wrapper">
+                        <img src="img/dj.png" alt="DJ" class="role-icon-img">
+                    </div>
+                    <span>DJ</span>
+                </div>
+            </div>
+
+            <!-- Card de Opinión sobre la IA (Barra con el pin al medio/a favor) -->
+            <div class="opinion-card">
+                <h3 class="opinion-title">Opinion sobre la IA</h3>
+                <div class="spectrum-image-wrapper">
+                    <img src="img/opinionmedia.png" alt="Espectro de opinión Guetta" class="spectrum-img">
+                </div>
+                <div class="spectrum-labels">
+                    <span>En contra</span>
+                    <span>A favor</span>
+                </div>
+            </div>
+
+            <!-- Card de Citas / Declaración -->
+            <div class="quote-card">
+                <p id="quote-text" class="quote-text">
+                    "El futuro de la música está en la inteligencia artificial pero como herramienta"
+                </p>
+            </div>
+
+            <!-- Controles del Carrusel de Citas (< >) -->
+            <div class="quote-controls">
+                <button id="prev-quote" class="btn-quote-arrow" aria-label="Cita anterior">&lt;</button>
+                <button id="next-quote" class="btn-quote-arrow" aria-label="Cita siguiente">&gt;</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Archivo JS unificado -->
+    <script src="script.js"></script>
+</body>
+</html>

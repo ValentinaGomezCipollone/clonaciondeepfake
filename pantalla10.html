@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Pregunta 3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-body">
+
+    <!-- Botón Home -->
+    <a href="index.html" class="btn-home-icon" aria-label="Volver al inicio">
+        <img src="img/home.png" alt="Home" class="home-icon-img">
+    </a>
+
+    <!-- Blandas de Esquinas -->
+    <img src="img/Blandadegradadamulticolor.png" alt="" class="blob-bottom-left">
+    <img src="img/Blandaarribaizquierda.png" alt="" class="blob-top-right">
+
+    <main class="quiz-wrapper">
+        <h1 class="quiz-title">Poné a prueba lo que aprendiste:</h1>
+
+        <!-- Tarjeta Transparente -->
+        <div class="quiz-card-transparent">
+            
+            <div class="quiz-content">
+                <div class="quiz-question-header">
+                    <div class="question-number">3</div>
+                    <h2 class="question-text">
+                        Según Ice Cube en el podcast Full Send, ¿qué medida tomaría contra la música hecha con IA?
+                    </h2>
+                </div>
+
+                <form class="quiz-options-form" id="quiz-form-3">
+                    <label class="quiz-option">
+                        <input type="radio" name="question3" value="protesta">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">Lanzar una canción de protesta</span>
+                    </label>
+
+                    <label class="quiz-option">
+                        <input type="radio" name="question3" value="demandar">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">Demandar a los creadores y a las plataformas que la <br> reproduzcan.</span>
+                    </label>
+
+                    <label class="quiz-option">
+                        <input type="radio" name="question3" value="dejar-publicar">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">Dejar de publicar música digitalmente.</span>
+                    </label>
+
+                    <label class="quiz-option">
+                        <input type="radio" name="question3" value="apoyar-uso">
+                        <span class="custom-radio"></span>
+                        <span class="option-label">Apoyar el uso regulado de la IA.</span>
+                    </label>
+                </form>
+            </div>
+
+            <!-- Cerebro Flotante -->
+            <img src="img/cerebro.png" alt="Cerebro IA" class="brain-img-floating">
+
+        </div>
+
+        <!-- Fila Inferior con Paginador (Paso 3 activo) y Botón Confirmar -->
+        <div class="quiz-footer-row">
+            
+            <div class="quiz-progress-bar">
+                <span class="progress-step"></span>
+                <span class="progress-step"></span>
+                <span class="progress-step active"></span>
+                <span class="progress-step"></span>
+                <span class="progress-step"></span>
+            </div>
+
+            <button type="button" class="btn-quiz-action btn-confirm-response" id="btn-confirm-3">
+                Confirmar respuesta
+            </button>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaraciones - Pantalla 7</title>
+
+    <!-- Google Fonts: Poppins (800) y Averia Serif Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos unificada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón Home (Imagen de la casita) -->
+    <a href="index.html" class="btn-home" aria-label="Volver al inicio">
+        <img src="img/home.png" alt="Inicio" class="home-icon-img">
+    </a>
+
+    <!-- Elemento decorativo Neón (Arriba a la derecha) -->
+    <img src="img/Blandaarribaizquierda.png" alt="Decoración Neón Superior" class="blob blob-top-right">
+
+    <!-- Pantalla Conceptual Flotante (Sin rectángulo oscuro completo) -->
+    <section class="screen-wrapper-p7">
+
+        <!-- Mapa de Red Radial -->
+        <div class="concept-map-container">
+
+            <!-- Líneas Conectoras SVG (Forman la telaraña neón) -->
+        <svg class="map-connections-svg" viewBox="0 0 1000 650">
+            <!-- Línea SZA -->
+            <line x1="500" y1="325" x2="580" y2="120" class="conn-line line-blue" />
+    
+            <!-- Línea Billie Eilish -->
+            <line x1="500" y1="325" x2="160" y2="150" class="conn-line line-blue" />
+    
+            <!-- Línea Ice Cube -->
+            <line x1="500" y1="325" x2="160" y2="500" class="conn-line line-blue" />
+    
+            <!-- Línea Grimes (Rosa ajustada) -->
+            <line x1="500" y1="325" x2="760" y2="520" class="conn-line line-pink" />
+    
+            <!-- Línea David Guetta -->
+            <line x1="500" y1="325" x2="850" y2="240" class="conn-line line-purple" />
+        </svg>
+
+            <!-- Círculo Central: DECLARACIONES -->
+            <div class="center-node">
+                <span>DECLARACIONES</span>
+            </div>
+
+            <!-- Nodo 1: SZA (Texto al costado derecho) -->
+        <div class="artist-node node-sza" data-artist="sza">
+            <div class="artist-avatar-ring border-blue">
+            <img src="img/sza.png" alt="SZA" class="artist-avatar-img">
+            </div>
+            <div class="artist-info info-side">
+            <h2 class="artist-name">SZA</h2>
+            <span class="artist-role">CANTAUTORA - ACTRIZ</span>
+           </div>
+        </div>
+
+            <!-- Nodo 2: BILLIE EILISH (Arriba izquierda) -->
+            <div class="artist-node node-billie" data-artist="billie">
+                <div class="artist-avatar-ring border-blue">
+                    <img src="img/billie.png" alt="Billie Eilish" class="artist-avatar-img">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">BILLIE EILISH</h2>
+                    <span class="artist-role">CANTANTE - COMPOSITORA</span>
+                </div>
+            </div>
+
+            <!-- Nodo 3: ICE CUBE (Abajo izquierda) -->
+            <div class="artist-node node-icecube" data-artist="icecube">
+                <div class="artist-avatar-ring border-blue">
+                    <img src="img/icecube.png" alt="Ice Cube" class="artist-avatar-img">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">ICE CUBE</h2>
+                    <span class="artist-role">RAPERO - ACTOR</span>
+                </div>
+            </div>
+
+            <!-- Nodo 4: GRIMES (Abajo derecha) -->
+            <div class="artist-node node-grimes" data-artist="grimes">
+                <div class="artist-avatar-ring border-magenta">
+                    <img src="img/grimes.png" alt="Grimes" class="artist-avatar-img">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">GRIMES</h2>
+                    <span class="artist-role">CANTANTE - COMPOSITORA</span>
+                </div>
+            </div>
+
+            <!-- Nodo 5: DAVID GUETTA (Derecha centro) -->
+            <div class="artist-node node-guetta" data-artist="guetta">
+                <div class="artist-avatar-ring border-purple">
+                    <img src="img/david.png" alt="David Guetta" class="artist-avatar-img">
+                </div>
+                <div class="artist-info">
+                    <h2 class="artist-name">DAVID GUETTA</h2>
+                    <span class="artist-role">DJ - PRODUCTOR</span>
+                </div>
+            </div>
+
+        </div>
+        
+    <!-- Botón "Ponete a prueba" -->
+    <a href="pantalla8.html" class="btn-test-yourself" id="btn-test">
+    Ponete a prueba
+    </a>
+
+    </section>
+
+    <!-- Archivo JS unificado -->
+    <script src="script.js"></script>
+</body>
+</html>

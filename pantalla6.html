@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cuántas personas están en contra? - Pantalla 6</title>
+
+    <!-- Google Fonts: Poppins (800) y Averia Serif Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos unificada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón Home -->
+    <a href="index.html" class="btn-home" aria-label="Volver al inicio">
+        <img src="img/home.png" alt="Inicio" class="home-icon-img">
+    </a>
+
+    <!-- Elementos decorativos Neón -->
+    <img src="img/Blandaabajoizquierda.png" alt="Decoración Neón Inferior" class="blob blob-bottom-right-p4">
+
+    <!-- Pantalla de Carrusel (Sin rectángulo completo detrás) -->
+    <section class="screen-wrapper-carousel">
+
+        <!-- Título principal -->
+        <header class="header-title-carousel">
+            <h1 class="title-text-carousel">¿Cuantas personas estan en contra?</h1>
+        </header>
+
+        <!-- Contenedor Deslizable de Tarjetas (Scroll horizontal) -->
+        <div class="carousel-scroll-container" id="carousel-scroll">
+            
+            <!-- Tarjeta 1 (74%) -->
+            <article class="carousel-card-snap">
+                <div class="card-image-col">
+                    <img src="img/74porciento.png" alt="74%" class="stat-circle-img">
+                </div>
+                <div class="card-text-col">
+                    <p class="main-stat-text">
+                        El <span class="hl-magenta">74%</span> está de acuerdo en que la IA no debería usarse para clonar o suplantar la identidad de artistas sin autorización
+                    </p>
+                    <p class="sub-stat-text">
+                        El <span class="hl-purple">26%</span> restante se divide en: Indecisos o neutrales (12%), a favor con matices bajo regulación excepcional como fines educativos o sátira (8%), y a favor del libre uso sin restricciones estrictas (6%).
+                    </p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2 (76%) -->
+            <article class="carousel-card-snap">
+                <div class="card-image-col">
+                    <img src="img/76porciento.png" alt="76%" class="stat-circle-img">
+                </div>
+                <div class="card-text-col">
+                    <p class="main-stat-text">
+                        El <span class="hl-magenta">76%</span> opina que la música o la voz de un artista no deberían ser utilizadas ni procesadas por la IA sin permiso
+                    </p>
+                    <p class="sub-stat-text">
+                        El <span class="hl-purple">24%</span> restante se compone de: Personas abiertas o a favor de usar la IA en la música, junto con un pequeño grupo indiferente o sin opinión definida.
+                    </p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3 (79%) -->
+            <article class="carousel-card-snap">
+                <div class="card-image-col">
+                    <img src="img/79porciento.png" alt="79%" class="stat-circle-img">
+                </div>
+                <div class="card-text-col">
+                    <p class="main-stat-text">
+                        El <span class="hl-magenta">79%</span> considera que la creatividad humana sigue siendo esencial para la creación musical
+                    </p>
+                    <p class="sub-stat-text">
+                        El <span class="hl-purple">21%</span> restante cree que la IA puede igualar o superar la creatividad humana en la música, defendiendo que los métodos automáticos son suficientes por sí solos.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Botón Inferior -->
+        <div class="action-container-carousel">
+            <button id="btn-finalizar-todo" class="btn-continuar">¿Y los artistas?</button>
+        </div>
+
+        <!-- Crédito de la fuente -->
+        <footer class="source-credit-carousel">
+            Información obtenida de: https://surl.li/oapass
+        </footer>
+
+    </section>
+
+    <!-- Archivo JS unificado -->
+    <script src="script.js"></script>
+</body>
+</html>

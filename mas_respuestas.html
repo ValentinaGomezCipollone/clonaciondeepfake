@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Voz de la Comunidad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-body">
+
+    <!-- Botón Home -->
+    <a href="index.html" class="btn-home-icon" aria-label="Volver al inicio">
+        <img src="img/home.png" alt="Home" class="home-icon-img">
+    </a>
+
+    <!-- Blandas de Esquinas -->
+    <img src="img/Blandadegradadamulticolor.png" alt="" class="blob-bottom-left">
+    <img src="img/Blandaarribaizquierda.png" alt="" class="blob-top-right">
+
+    <main class="quiz-wrapper comunidad-wrapper">
+        <h1 class="quiz-title">La Voz de la Comunidad</h1>
+
+        <!-- Grilla de Tarjetas -->
+        <div class="comunidad-grid" id="comunidad-grid">
+            
+            <!-- Ejemplo 1 Predefinido -->
+            <div class="community-card">
+                <span class="user-label">Usuario anónimo</span>
+                <p class="user-response">
+                    Es peligroso porque algunas palabras pueden lastimar a otras personas. Debería estar estrictamente prohibido.
+                </p>
+            </div>
+
+            <!-- Ejemplo 2 Predefinido -->
+            <div class="community-card">
+                <span class="user-label">Usuario anónimo</span>
+                <p class="user-response">
+                    Nadie debería poder decidir por los demás. Cada persona debería tener derecho a elegir sobre su propia vida.
+                </p>
+            </div>
+
+            <!-- Las respuestas ingresadas por el usuario se agregarán aquí dinámicamente vía JS -->
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

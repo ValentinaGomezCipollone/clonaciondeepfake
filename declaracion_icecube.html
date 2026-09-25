@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de Ice Cube</title>
+
+    <!-- Google Fonts: Poppins (800) y Averia Serif Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos unificada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón Volver al Mapa -->
+    <a href="pantalla7.html" class="btn-back-arrow" aria-label="Volver al mapa">
+        <img src="img/flecha.png" alt="Volver" class="back-arrow-img">
+    </a>
+
+    <!-- Elemento decorativo Neón -->
+    <img src="img/Blandaarribaderecha.png" alt="Decoración Neón Superior" class="blob blob-top-left-sza">
+
+    <!-- Pantalla Flotante del Artista -->
+    <section class="screen-wrapper-artist">
+
+        <!-- Columna Izquierda: Foto de Perfil y Nombre -->
+        <div class="artist-profile-col">
+            <div class="artist-big-avatar-ring">
+               <img src="img/icecube.png" alt="Ice Cube" class="artist-big-avatar-img avatar-icecube-big">
+            </div>
+            <div class="artist-title-row">
+                <h1 class="artist-big-name">ICE CUBE</h1>
+                <img src="img/eeuu.png" alt="EE.UU." class="flag-img">
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Roles, Barra de Opinión y Citas -->
+        <div class="artist-details-col">
+
+            <!-- Roles de Ice Cube (Rapero / Actor) -->
+            <div class="roles-image-container">
+                <div class="role-item">
+                    <div class="role-icon-wrapper">
+                        <img src="img/rapero.png" alt="Rapero" class="role-icon-img">
+                    </div>
+                    <span>Rapero</span>
+                </div>
+                <div class="role-item">
+                    <div class="role-icon-wrapper">
+                        <img src="img/actor.png" alt="Actor" class="role-icon-img">
+                    </div>
+                    <span>Actor</span>
+                </div>
+            </div>
+
+            <!-- Card de Opinión sobre la IA (Barra "En contra") -->
+            <div class="opinion-card">
+                <h3 class="opinion-title">Opinion sobre la IA</h3>
+                <div class="spectrum-image-wrapper">
+                    <img src="img/encontra.png" alt="Espectro de opinión Ice Cube" class="spectrum-img">
+                </div>
+                <div class="spectrum-labels">
+                    <span>En contra</span>
+                    <span>A favor</span>
+                </div>
+            </div>
+
+            <!-- Card de Citas / Declaración -->
+            <div class="quote-card">
+                <p id="quote-text" class="quote-text">
+                    "Creo que la IA es demoníaca"
+                </p>
+            </div>
+
+            <!-- Controles del Carrusel de Citas (< >) -->
+            <div class="quote-controls">
+                <button id="prev-quote" class="btn-quote-arrow" aria-label="Cita anterior">&lt;</button>
+                <button id="next-quote" class="btn-quote-arrow" aria-label="Cita siguiente">&gt;</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Archivo JS unificado -->
+    <script src="script.js"></script>
+</body>
+</html>

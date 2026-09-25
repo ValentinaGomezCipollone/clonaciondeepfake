@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración de SZA</title>
+
+    <!-- Google Fonts: Poppins (800) y Averia Serif Libre -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos unificada -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Botón Volver a la Red (Flecha de imagen) -->
+    <a href="pantalla7.html" class="btn-back-arrow" aria-label="Volver al mapa">
+        <img src="img/flecha.png" alt="Volver" class="back-arrow-img">
+    </a>
+
+    <!-- Elemento decorativo Neón (Arriba a la izquierda) -->
+    <img src="img/Blandaarribaderecha.png" alt="Decoración Neón Superior" class="blob blob-top-left-sza">
+
+    <!-- Pantalla Flotante del Artista -->
+    <section class="screen-wrapper-artist">
+
+        <!-- Columna Izquierda: Foto de Perfil y Nombre -->
+        <div class="artist-profile-col">
+            <div class="artist-big-avatar-ring">
+                <img src="img/sza.png" alt="SZA" class="artist-big-avatar-img">
+            </div>
+            <div class="artist-title-row">
+                <h1 class="artist-big-name">SZA</h1>
+                <!-- Reemplazamos la etiqueta del emoji por la imagen de la bandera -->
+                <img src="img/eeuu.png" alt="EE.UU." class="flag-img">
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Detalles, Barra de Opinión y Citas -->
+        <div class="artist-details-col">
+
+            <!-- Imagen unificada con los 3 íconos y roles de SZA -->
+            <div class="roles-image-container">
+                <img src="img/cantantecompositoractor.png" alt="Compositora, Actriz, Cantante" class="roles-img">
+            </div>
+
+
+            <!-- Card de Opinión sobre la IA (Con Imagen + Textos) -->
+        <div class="opinion-card">
+            <h3 class="opinion-title">Opinion sobre la IA</h3>
+        <div class="spectrum-image-wrapper">
+            <img src="img/afavor.png" alt="Espectro de opinión" class="spectrum-img">
+        </div>
+        <div class="spectrum-labels">
+            <span>En contra</span>
+            <span>A favor</span>
+        </div>
+        </div>
+
+            <!-- Card de Citas de la Declaración (Carrusel) -->
+            <div class="quote-card">
+                <p id="quote-text" class="quote-text">
+                    "¿Por qué estoy escuchando covers de Olivia Dean hechos con IA cuando Olivia Dean acaba de aparecer?"
+                </p>
+            </div>
+
+            <!-- Controles del Carrusel de Citas (< >) -->
+            <div class="quote-controls">
+                <button id="prev-quote" class="btn-quote-arrow" aria-label="Cita anterior">&lt;</button>
+                <button id="next-quote" class="btn-quote-arrow" aria-label="Cita siguiente">&gt;</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Archivo JS unificado -->
+    <script src="script.js"></script>
+</body>
+</html>

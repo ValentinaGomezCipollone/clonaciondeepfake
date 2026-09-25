@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - ¡Correcto!</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-body">
+
+    <!-- Botón Home -->
+    <a href="index.html" class="btn-home-icon" aria-label="Volver al inicio">
+        <img src="img/home.png" alt="Home" class="home-icon-img">
+    </a>
+
+    <!-- Blandas de Esquinas -->
+    <img src="img/Blandadegradadamulticolor.png" alt="" class="blob-bottom-left">
+    <img src="img/Blandaarribaizquierda.png" alt="" class="blob-top-right">
+
+    <main class="quiz-wrapper">
+        <h1 class="quiz-title">Poné a prueba lo que aprendiste:</h1>
+
+        <!-- Tarjeta de Resultado -->
+        <div class="quiz-card-transparent">
+            
+            <div class="quiz-content">
+                <div class="quiz-question-header feedback-header-centered">
+                    <div class="question-number">2</div>
+                    
+                    <!-- Badge ¡CORRECTO! Centrado -->
+                    <div class="feedback-badge correct-pill">
+                        ¡CORRECTO!
+                    </div>
+                </div>
+
+                <!-- Foto de Billie Eilish y Texto con saltos de línea -->
+                <div class="feedback-info-container">
+                    <img src="img/billie.png" alt="Billie Eilish" class="artist-result-img">
+                    <p class="feedback-text">
+                        La artista que firmó una carta abierta con la Artist Rights Alliance para frenar el avance de la IA
+                    </p>
+                </div>
+            </div>
+
+            <!-- Cerebro Flotante -->
+            <img src="img/cerebro.png" alt="Cerebro IA" class="brain-img-floating">
+
+        </div>
+
+        <!-- Botón Siguiente Pregunta Centrado -->
+        <div class="quiz-footer-row feedback-footer-centered">
+            <a href="pantalla10.html" class="btn-quiz-action btn-next-question">
+                <img src="img/flechaderecha.png" alt="" class="btn-icon">
+                SIGUIENTE PREGUNTA
+            </a>
+        </div>
+    </main>
+
+</body>
+</html>
